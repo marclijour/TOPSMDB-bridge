@@ -29,17 +29,11 @@ Version: 1.0
  * GLOBAL VARIABLES
  ************************/
 $topsmdbb_TOPSMDB_URL 	= "https://www.lijour.net/TOPStesting/"; ## TODO change for Prod
-$topsmddb_USER 		= "OPSpedia";		// user at TOPSMDB
-$topsmddb_PASSWORD	= "reT%*LFSl20";	// user password at TOPSMDB
 
 /************************
  * INCLUDES
  ************************/
-#if( file_exists('includes/itsapi.php')) {
-	include('includes/itsapi.php');
-#}else{
-	$ITS_API                = "undisclosed";        // default
-#}
+include('includes/topsmdb-credentials.php');	// login info (not provided in GitHub)
 include('includes/scripts.php');		// all JS and CSS
 include('includes/functions.php');		// PHP functions for this plugin
 

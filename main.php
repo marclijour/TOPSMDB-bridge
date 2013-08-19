@@ -28,7 +28,8 @@ Version: 1.0
 /************************
  * GLOBAL VARIABLES
  ************************/
-$topsmdbb_TOPSMDB_URL 	= "https://www.lijour.net/TOPStesting/"; ## TODO change for Prod
+global $topsmdbb_TOPSMDB_URL;
+$topsmdbb_TOPSMDB_URL = "https://www.lijour.net/TOPStesting/"; ## TODO change for Prod
 
 /************************
  * INCLUDES
